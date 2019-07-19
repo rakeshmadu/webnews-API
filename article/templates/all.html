@@ -1,0 +1,12 @@
+{%for art in all_articles%}
+    <h1>{{art.heading}}</h1>
+    <h3>{{art.created}}</h3>
+    <h1>{{art.reporter}}</h1>
+    <h6>{{art.body}}</h4>
+    {%if art.image%}
+        <img width=400px src={{art.image.url}}/>
+    {%endif%}
+{%endfor%}
+
+
+

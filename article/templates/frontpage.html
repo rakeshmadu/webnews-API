@@ -1,0 +1,9 @@
+
+    <h1>{{art.heading}}</h1>
+    <h3>{{art.created}}-{{art.reporter}}</h3>
+    {% if art.image %}
+    <img width=400px src={{art.image.url}}/>
+    {% endif %}
+
+
+    <p>{{art.body}}</p>
